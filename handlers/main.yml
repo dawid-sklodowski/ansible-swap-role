@@ -1,0 +1,7 @@
+- name: Turn swap on
+  command: swapon -a
+  sudo: True
+
+- name: Adjust swapiness
+  command: echo {{ swapiness }} | tee /proc/sys/vm/swappiness
+  sudo: True
