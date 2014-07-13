@@ -1,0 +1,2 @@
+[amazon]
+myserver ansible_ssh_user=ubuntu
